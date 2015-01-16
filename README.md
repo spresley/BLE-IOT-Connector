@@ -13,7 +13,7 @@ The application can publish data to the following event topics:
 - Accelerometer
 - Touchmove
 - Text
-- Gamepad
+- Gamepad (Currently disabled)
 
 The application can receive data on the following command topics:
 - Color
