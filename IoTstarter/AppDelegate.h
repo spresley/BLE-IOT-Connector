@@ -38,7 +38,7 @@
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
 
 #define IS_OS_8_OR_LATER ([[[UIDevice currentDevice] systemVersion] floatValue] >= 8.0)
-#define USE_LOCAL_NOTIFICATIONS
+//#define USE_LOCAL_NOTIFICATIONS
 
 // UI views
 @property (strong, nonatomic) UIWindow *window;
