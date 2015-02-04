@@ -271,7 +271,8 @@
         self.locationManager = [[CLLocationManager alloc] init];
         self.locationManager.delegate = self;
         if (IS_OS_8_OR_LATER) {
-            [self.locationManager requestAlwaysAuthorization];
+            //[self.locationManager requestAlwaysAuthorization];
+            [self.locationManager requestWhenInUseAuthorization];
         }
         self.locationManager.desiredAccuracy = kCLLocationAccuracyBestForNavigation;
         [self.locationManager startUpdatingLocation];
