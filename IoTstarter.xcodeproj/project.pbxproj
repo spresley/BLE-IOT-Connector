@@ -120,6 +120,7 @@
 		27B5928619EC75DF00593424 /* ic_stats.png in Resources */ = {isa = PBXBuildFile; fileRef = 27B5928519EC75DF00593424 /* ic_stats.png */; };
 		27E4809F19F8560F00762CEB /* ic_chevron-right.png in Resources */ = {isa = PBXBuildFile; fileRef = 274B158A19F6F6F500FF15DE /* ic_chevron-right.png */; };
 		27E480A019F8561200762CEB /* ic_chevron-left.png in Resources */ = {isa = PBXBuildFile; fileRef = 274B158B19F6F6F500FF15DE /* ic_chevron-left.png */; };
+		6745C5F51DDDAEC900969415 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6745C5F41DDDAEC900969415 /* Launch Screen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -212,6 +213,7 @@
 		27B5928119EC734700593424 /* ic_file.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_file.png; sourceTree = "<group>"; };
 		27B5928319EC74CF00593424 /* iotlogosmall.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = iotlogosmall.png; sourceTree = "<group>"; };
 		27B5928519EC75DF00593424 /* ic_stats.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_stats.png; sourceTree = "<group>"; };
+		6745C5F41DDDAEC900969415 /* Launch Screen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -406,6 +408,7 @@
 				27468DC919CB248800435340 /* Main_iPad.storyboard */,
 				27468DC619CB248800435340 /* Main_iPhone.storyboard */,
 				2729B46C19DDFB4B00356440 /* Second_iPhone.storyboard */,
+				6745C5F41DDDAEC900969415 /* Launch Screen.storyboard */,
 			);
 			name = storyboards;
 			sourceTree = "<group>";
@@ -492,7 +495,7 @@
 		27468DA919CB248800435340 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0510;
+				LastUpgradeCheck = 0810;
 				ORGANIZATIONNAME = "Mike Robertson";
 				TargetAttributes = {
 					27468DB019CB248800435340 = {
@@ -500,6 +503,10 @@
 					};
 					27468DD419CB248800435340 = {
 						TestTargetID = 27468DB019CB248800435340;
+					};
+					27A0C79F19EEC766009FA500 = {
+						DevelopmentTeam = Y4MW9SBU4B;
+						ProvisioningStyle = Automatic;
 					};
 				};
 			};
@@ -590,6 +597,7 @@
 				278515FE1A016FCA000521F6 /* iotlogo76x76.png in Resources */,
 				278ACC731A12B81A002EF6F0 /* ic_down_arrow.png in Resources */,
 				278ACC711A12B81A002EF6F0 /* ic_right_arrow.png in Resources */,
+				6745C5F51DDDAEC900969415 /* Launch Screen.storyboard in Resources */,
 				27A0C7B619EEC766009FA500 /* Images.xcassets in Resources */,
 				27A0C7B719EEC766009FA500 /* iotlogo.png in Resources */,
 				27A0C7B819EEC766009FA500 /* orange2.png in Resources */,
@@ -730,14 +738,20 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGN_IDENTITY = "iPhone Distribution: International Business Machines";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: International Business Machines";
 				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
@@ -750,7 +764,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -770,21 +784,26 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGN_IDENTITY = "iPhone Distribution: International Business Machines";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: International Business Machines";
 				COPY_PHASE_STRIP = YES;
 				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
@@ -808,6 +827,7 @@
 					"$(PROJECT_DIR)/IoTstarter",
 				);
 				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_BUNDLE_IDENTIFIER = "IBM.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "2CBA151C-202B-4930-972B-9F407FF3B545";
 				WRAPPER_EXTENSION = app;
@@ -831,6 +851,7 @@
 					"$(PROJECT_DIR)/IoTstarter",
 				);
 				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_BUNDLE_IDENTIFIER = "IBM.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "2CBA151C-202B-4930-972B-9F407FF3B545";
 				WRAPPER_EXTENSION = app;
@@ -853,6 +874,7 @@
 					"$(inherited)",
 				);
 				INFOPLIST_FILE = "IoTstarterTests/IoTstarterTests-Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "IBM.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
@@ -871,6 +893,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "IoTstarter/IoTstarter-Prefix.pch";
 				INFOPLIST_FILE = "IoTstarterTests/IoTstarterTests-Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "IBM.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
@@ -890,21 +913,26 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGN_IDENTITY = "iPhone Distribution: International Business Machines";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: International Business Machines";
 				COPY_PHASE_STRIP = YES;
 				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
@@ -928,6 +956,7 @@
 					"$(PROJECT_DIR)/IoTstarter",
 				);
 				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_BUNDLE_IDENTIFIER = "IBM.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "2CBA151C-202B-4930-972B-9F407FF3B545";
 				WRAPPER_EXTENSION = app;
@@ -946,6 +975,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "IoTstarter/IoTstarter-Prefix.pch";
 				INFOPLIST_FILE = "IoTstarterTests/IoTstarterTests-Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "IBM.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
@@ -958,7 +988,9 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Distribution: International Business Machines";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: International Business Machines";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = Y4MW9SBU4B;
+				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "IoTstarter/IoTstarter-Prefix.pch";
@@ -968,8 +1000,10 @@
 					"$(PROJECT_DIR)/IoTstarter",
 				);
 				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_BUNDLE_IDENTIFIER = com.spresley.IoTstarter;
 				PRODUCT_NAME = IoTstarter;
 				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -980,7 +1014,9 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Distribution: International Business Machines";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: International Business Machines";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = Y4MW9SBU4B;
+				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "IoTstarter/IoTstarter-Prefix.pch";
@@ -990,8 +1026,10 @@
 					"$(PROJECT_DIR)/IoTstarter",
 				);
 				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_BUNDLE_IDENTIFIER = com.spresley.IoTstarter;
 				PRODUCT_NAME = IoTstarter;
 				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -1002,7 +1040,9 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Distribution: International Business Machines";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: International Business Machines";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = Y4MW9SBU4B;
+				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "IoTstarter/IoTstarter-Prefix.pch";
@@ -1012,8 +1052,10 @@
 					"$(PROJECT_DIR)/IoTstarter",
 				);
 				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_BUNDLE_IDENTIFIER = com.spresley.IoTstarter;
 				PRODUCT_NAME = IoTstarter;
 				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Distribution;
