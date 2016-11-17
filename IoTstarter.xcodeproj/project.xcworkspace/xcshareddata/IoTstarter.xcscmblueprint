@@ -9,7 +9,7 @@
   },
   "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "E3C09B9B-690B-457B-8C2D-3711EA9A6B4F",
   "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
-    "C61084B1445729B643C7531E073845F0953D685C" : "IBM-IOT-Starter\/",
+    "C61084B1445729B643C7531E073845F0953D685C" : "BLE-IOT-Connector\/",
     "899D58FDEDC57CE4735ACADA766D7BC10FA77AB0" : "IoTStarter"
   },
   "DVTSourceControlWorkspaceBlueprintNameKey" : "IoTstarter",
