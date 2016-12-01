@@ -16,7 +16,18 @@
 #import "LoginViewController.h"
 #import "AppDelegate.h"
 
-@interface LoginViewController ()
+/*
+ * BLE Defines
+ */
+
+#define TIMER_PAUSE_INTERVAL 10.0
+#define TIMER_SCAN_INTERVAL  2.0
+
+#define SENSOR_TAG_NAME @"CC2650 SensorTag"
+#define ROOM_MONITOR_TAG_NAME @"ELEC6245 RoomMonitor"
+#define GDP_NODE_NAME @"GH-SensorNode"
+
+@interface LoginViewController () <CBCentralManagerDelegate, CBPeripheralDelegate>
 
 @property (strong, nonatomic) IBOutlet UIButton *activateButton;
 
@@ -29,6 +40,13 @@
 @property (strong, nonatomic) IBOutlet UIButton *showAuthToken;
 
 @property (strong, nonatomic) IBOutlet UISwitch *accelSwitch;
+
+// BLE properties
+@property (nonatomic, strong) CBCentralManager *centralManager;
+@property (nonatomic, strong) CBPeripheral *sensorTag;
+@property (nonatomic, strong) CBPeripheral *roomSensorTag;
+@property (nonatomic, assign) BOOL keepScanning;
+// End BLE Properties
 
 @end
 
@@ -101,7 +119,121 @@
     /*
      *  Todo BLE stuff here
      */
+    
+    // Create the CBCentralManager.
+    // NOTE: Creating the CBCentralManager with initWithDelegate will immediately call centralManagerDidUpdateState.
+    self.centralManager = [[CBCentralManager alloc] initWithDelegate:self queue:nil options:nil];
 }
+
+/*************************************************************************
+ * BLE Methods
+ *************************************************************************/
+
+- (void)pauseScan {
+    // Scanning uses up battery on phone, so pause the scan process for the designated interval.
+    NSLog(@"*** PAUSING SCAN...");
+    [NSTimer scheduledTimerWithTimeInterval:TIMER_PAUSE_INTERVAL target:self selector:@selector(resumeScan) userInfo:nil repeats:NO];
+    [self.centralManager stopScan];
+}
+
+- (void)resumeScan {
+    if (self.keepScanning) {
+        // Start scanning again...
+        NSLog(@"*** RESUMING SCAN!");
+        [NSTimer scheduledTimerWithTimeInterval:TIMER_SCAN_INTERVAL target:self selector:@selector(pauseScan) userInfo:nil repeats:NO];
+        [self.centralManager scanForPeripheralsWithServices:nil options:nil];
+    }
+}
+
+- (void)cleanup {
+    [_centralManager cancelPeripheralConnection:self.sensorTag];
+}
+
+- (void)centralManagerDidUpdateState:(CBCentralManager *)central {
+    BOOL showAlert = YES;
+    NSString *state = @"";
+    switch ([central state])
+    {
+        case CBCentralManagerStateUnsupported:
+            state = @"This device does not support Bluetooth Low Energy.";
+            break;
+        case CBCentralManagerStateUnauthorized:
+            state = @"This app is not authorized to use Bluetooth Low Energy.";
+            break;
+        case CBCentralManagerStatePoweredOff:
+            state = @"Bluetooth on this device is currently powered off.";
+            break;
+        case CBCentralManagerStateResetting:
+            state = @"The BLE Manager is resetting; a state update is pending.";
+            break;
+        case CBCentralManagerStatePoweredOn:
+            showAlert = NO;
+            state = @"Bluetooth LE is turned on and ready for communication.";
+            NSLog(@"%@", state);
+            self.keepScanning = YES;
+            [NSTimer scheduledTimerWithTimeInterval:TIMER_SCAN_INTERVAL target:self selector:@selector(pauseScan) userInfo:nil repeats:NO];
+            [self.centralManager scanForPeripheralsWithServices:nil options:nil];
+            break;
+        case CBCentralManagerStateUnknown:
+            state = @"The state of the BLE Manager is unknown.";
+            break;
+        default:
+            state = @"The state of the BLE Manager is unknown.";
+    }
+    
+    if (showAlert) {
+        UIAlertController *ac = [UIAlertController alertControllerWithTitle:@"Central Manager State" message:state preferredStyle:UIAlertControllerStyleAlert];
+        UIAlertAction *okAction = [UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleCancel handler:nil];
+        [ac addAction:okAction];
+        [self presentViewController:ac animated:YES completion:nil];
+    }
+    
+}
+
+- (void)centralManager:(CBCentralManager *)central didDiscoverPeripheral:(CBPeripheral *)peripheral advertisementData:(NSDictionary *)advertisementData RSSI:(NSNumber *)RSSI {
+    // Retrieve the peripheral name from the advertisement data using the "kCBAdvDataLocalName" key
+    NSString *peripheralName = [advertisementData objectForKey:@"kCBAdvDataLocalName"];
+    NSLog(@"NEXT PERIPHERAL: %@ (%@)", peripheralName, peripheral.identifier.UUIDString);
+    if (peripheralName) {
+        if ([peripheralName isEqualToString:GDP_NODE_NAME]) { //ROOM_MONITOR_TAG_NAME
+            // we found a tag so stop scanning
+            self.keepScanning = NO;
+            
+            // save a reference to the sensor tag
+            self.sensorTag = peripheral;
+            self.sensorTag.delegate = self;
+            
+            // Request a connection to the peripheral
+            [self.centralManager connectPeripheral:self.sensorTag options:nil];
+        }
+    }
+}
+
+- (void)centralManager:(CBCentralManager *)central didConnectPeripheral:(CBPeripheral *)peripheral {
+    NSLog(@"**** SUCCESSFULLY CONNECTED TO SENSOR TAG!!!");
+    //self.temperatureLabel.font = [UIFont fontWithName:@"HelveticaNeue-Thin" size:56];
+    //self.temperatureLabel.text = @"Connected";
+    
+    // Now that we've successfully connected to the SensorTag, let's discover the services.
+    // - NOTE:  we pass nil here to request ALL services be discovered.
+    //          If there was a subset of services we were interested in, we could pass the UUIDs here.
+    //          Doing so saves batter life and saves time.
+    [peripheral discoverServices:nil];
+}
+
+- (void)centralManager:(CBCentralManager *)central didFailToConnectPeripheral:(CBPeripheral *)peripheral error:(NSError *)error {
+    NSLog(@"**** CONNECTION FAILED!!!");
+}
+
+- (void)centralManager:(CBCentralManager *)central didDisconnectPeripheral:(CBPeripheral *)peripheral error:(NSError *)error {
+    NSLog(@"**** DISCONNECTED FROM SENSOR TAG!!!");
+}
+
+
+
+/*************************************************************************
+ * END BLE METHODS
+ *************************************************************************/
 
 - (void)updateViewLabels
 {
