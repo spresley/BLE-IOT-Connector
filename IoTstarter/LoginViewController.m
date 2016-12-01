@@ -64,6 +64,10 @@
     self.deviceIDField.placeholder = IOTDevicePlaceholder;
     self.authTokenField.placeholder = IOTAuthPlaceholder;
     
+    self.organizationField.text = @"f6z0bl";
+    self.deviceIDField.text = @"Dev002";
+    self.authTokenField.text = @"test1234";
+    
     if (![appDelegate.organization isEqualToString:@""])
     {
         self.organizationField.text = appDelegate.organization;

@@ -53,7 +53,7 @@
                                         <rect key="frame" x="0.0" y="22" width="316" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="8bB-Sx-zRV" id="1OY-cs-iT0">
-                                            <rect key="frame" x="0.0" y="0.0" width="316" height="44"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="316" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" red="0.30653935189999998" green="0.31004050929999999" blue="0.3148726852" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -114,7 +114,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="klW-5i-jQA" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-415.5" y="670.5"/>
+            <point key="canvasLocation" x="-417" y="722"/>
         </scene>
         <!--Home-->
         <scene sceneID="ufC-wZ-h7g">
@@ -281,7 +281,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-415.5" y="-465.5"/>
+            <point key="canvasLocation" x="-417.5" y="-731.5"/>
         </scene>
         <!--Profiles Table View Controller-->
         <scene sceneID="iAh-nt-Afa">
@@ -324,7 +324,7 @@
                                         <rect key="frame" x="0.0" y="22" width="343" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="0vO-2G-Zy8" id="iU1-Iz-GUX">
-                                            <rect key="frame" x="0.0" y="0.0" width="343" height="44"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="343" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <color key="backgroundColor" red="0.30653935189999998" green="0.31004050929999999" blue="0.3148726852" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </tableViewCellContentView>
@@ -355,7 +355,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="He7-Va-t5s" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-11.5" y="-465.5"/>
+            <point key="canvasLocation" x="119" y="-732"/>
         </scene>
         <!--IoT-->
         <scene sceneID="6HX-f0-Ncj">
@@ -501,7 +501,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="b0P-Ta-EyZ" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-415.5" y="124.5"/>
+            <point key="canvasLocation" x="-416" y="8"/>
         </scene>
         <!--Remote View Controller-->
         <scene sceneID="GyO-4H-vlk">
@@ -665,7 +665,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bwN-Jk-nYM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-415" y="1226"/>
+            <point key="canvasLocation" x="-416" y="1719"/>
         </scene>
     </scenes>
     <resources>
