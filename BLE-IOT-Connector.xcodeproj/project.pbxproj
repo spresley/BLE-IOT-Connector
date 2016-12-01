@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 46;
+	objectVersion = 48;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -137,14 +137,14 @@
 /* Begin PBXFileReference section */
 		2729B46C19DDFB4B00356440 /* Second_iPhone.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Second_iPhone.storyboard; sourceTree = "<group>"; };
 		2730A23B19FA93F300B6A0C3 /* iotlogo2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = iotlogo2.png; sourceTree = "<group>"; };
-		27468DB119CB248800435340 /* IoTstarterDev.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IoTstarterDev.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		27468DB119CB248800435340 /* BLE-IOT-ConnectorDev.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "BLE-IOT-ConnectorDev.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		27468DB419CB248800435340 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		27468DB619CB248800435340 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		27468DB819CB248800435340 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
-		27468DBC19CB248800435340 /* IoTstarter-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "IoTstarter-Info.plist"; sourceTree = "<group>"; };
+		27468DBC19CB248800435340 /* BLE-IOT-Connector-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "BLE-IOT-Connector-Info.plist"; sourceTree = "<group>"; };
 		27468DBE19CB248800435340 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		27468DC019CB248800435340 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		27468DC219CB248800435340 /* IoTstarter-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "IoTstarter-Prefix.pch"; sourceTree = "<group>"; };
+		27468DC219CB248800435340 /* BLE-IOT-Connector-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BLE-IOT-Connector-Prefix.pch"; sourceTree = "<group>"; };
 		27468DC319CB248800435340 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		27468DC419CB248800435340 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		27468DC719CB248800435340 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
@@ -152,9 +152,9 @@
 		27468DCC19CB248800435340 /* IoTStarterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IoTStarterViewController.h; sourceTree = "<group>"; };
 		27468DCD19CB248800435340 /* IoTStarterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IoTStarterViewController.m; sourceTree = "<group>"; };
 		27468DCF19CB248800435340 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		27468DD519CB248800435340 /* IoTstarterTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IoTstarterTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		27468DD519CB248800435340 /* BLE-IOT-ConnectorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "BLE-IOT-ConnectorTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		27468DD619CB248800435340 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
-		27468DDE19CB248800435340 /* IoTstarterTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "IoTstarterTests-Info.plist"; sourceTree = "<group>"; };
+		27468DDE19CB248800435340 /* BLE-IOT-ConnectorTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "BLE-IOT-ConnectorTests-Info.plist"; sourceTree = "<group>"; };
 		27468DE019CB248800435340 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		27468DE219CB248800435340 /* IoTstarterTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IoTstarterTests.m; sourceTree = "<group>"; };
 		27468DF219CB406F00435340 /* Messenger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Messenger.h; sourceTree = "<group>"; };
@@ -203,7 +203,7 @@
 		278ACC7B1A2E4A4B002EF6F0 /* ic_gamepad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_gamepad.png; sourceTree = "<group>"; };
 		278ACC7E1A2E7157002EF6F0 /* MessageFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MessageFactory.m; sourceTree = "<group>"; };
 		278ACC811A2E7177002EF6F0 /* MessageFactory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MessageFactory.h; sourceTree = "<group>"; };
-		27A0C7C719EEC766009FA500 /* IoTstarter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IoTstarter.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		27A0C7C719EEC766009FA500 /* BLE-IOT-Connector.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "BLE-IOT-Connector.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		27A5B6DC19D2064D00E36207 /* orange.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = orange.png; sourceTree = "<group>"; };
 		27A5B6DD19D2064D00E36207 /* orange2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = orange2.png; sourceTree = "<group>"; };
 		27B5927919E5B22B00593424 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
@@ -268,9 +268,9 @@
 		27468DB219CB248800435340 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				27468DB119CB248800435340 /* IoTstarterDev.app */,
-				27468DD519CB248800435340 /* IoTstarterTests.xctest */,
-				27A0C7C719EEC766009FA500 /* IoTstarter.app */,
+				27468DB119CB248800435340 /* BLE-IOT-ConnectorDev.app */,
+				27468DD519CB248800435340 /* BLE-IOT-ConnectorTests.xctest */,
+				27A0C7C719EEC766009FA500 /* BLE-IOT-Connector.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -309,10 +309,10 @@
 			children = (
 				27A5B6DC19D2064D00E36207 /* orange.png */,
 				27A5B6DD19D2064D00E36207 /* orange2.png */,
-				27468DBC19CB248800435340 /* IoTstarter-Info.plist */,
+				27468DBC19CB248800435340 /* BLE-IOT-Connector-Info.plist */,
 				27468DBD19CB248800435340 /* InfoPlist.strings */,
 				27468DC019CB248800435340 /* main.m */,
-				27468DC219CB248800435340 /* IoTstarter-Prefix.pch */,
+				27468DC219CB248800435340 /* BLE-IOT-Connector-Prefix.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -329,7 +329,7 @@
 		27468DDD19CB248800435340 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				27468DDE19CB248800435340 /* IoTstarterTests-Info.plist */,
+				27468DDE19CB248800435340 /* BLE-IOT-ConnectorTests-Info.plist */,
 				27468DDF19CB248800435340 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
@@ -441,9 +441,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		27468DB019CB248800435340 /* IoTstarterDev */ = {
+		27468DB019CB248800435340 /* BLE-IOT-ConnectorDev */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 27468DE619CB248800435340 /* Build configuration list for PBXNativeTarget "IoTstarterDev" */;
+			buildConfigurationList = 27468DE619CB248800435340 /* Build configuration list for PBXNativeTarget "BLE-IOT-ConnectorDev" */;
 			buildPhases = (
 				27468DAD19CB248800435340 /* Sources */,
 				27468DAE19CB248800435340 /* Frameworks */,
@@ -453,14 +453,14 @@
 			);
 			dependencies = (
 			);
-			name = IoTstarterDev;
+			name = "BLE-IOT-ConnectorDev";
 			productName = IoTstarter;
-			productReference = 27468DB119CB248800435340 /* IoTstarterDev.app */;
+			productReference = 27468DB119CB248800435340 /* BLE-IOT-ConnectorDev.app */;
 			productType = "com.apple.product-type.application";
 		};
-		27468DD419CB248800435340 /* IoTstarterTests */ = {
+		27468DD419CB248800435340 /* BLE-IOT-ConnectorTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 27468DE919CB248800435340 /* Build configuration list for PBXNativeTarget "IoTstarterTests" */;
+			buildConfigurationList = 27468DE919CB248800435340 /* Build configuration list for PBXNativeTarget "BLE-IOT-ConnectorTests" */;
 			buildPhases = (
 				27468DD119CB248800435340 /* Sources */,
 				27468DD219CB248800435340 /* Frameworks */,
@@ -471,14 +471,14 @@
 			dependencies = (
 				27468DDB19CB248800435340 /* PBXTargetDependency */,
 			);
-			name = IoTstarterTests;
+			name = "BLE-IOT-ConnectorTests";
 			productName = IoTstarterTests;
-			productReference = 27468DD519CB248800435340 /* IoTstarterTests.xctest */;
+			productReference = 27468DD519CB248800435340 /* BLE-IOT-ConnectorTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		27A0C79F19EEC766009FA500 /* IoTstarter */ = {
+		27A0C79F19EEC766009FA500 /* BLE-IOT-Connector */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 27A0C7C319EEC766009FA500 /* Build configuration list for PBXNativeTarget "IoTstarter" */;
+			buildConfigurationList = 27A0C7C319EEC766009FA500 /* Build configuration list for PBXNativeTarget "BLE-IOT-Connector" */;
 			buildPhases = (
 				27A0C7A019EEC766009FA500 /* Sources */,
 				27A0C7AE19EEC766009FA500 /* Frameworks */,
@@ -488,9 +488,9 @@
 			);
 			dependencies = (
 			);
-			name = IoTstarter;
+			name = "BLE-IOT-Connector";
 			productName = IoTstarter;
-			productReference = 27A0C7C719EEC766009FA500 /* IoTstarter.app */;
+			productReference = 27A0C7C719EEC766009FA500 /* BLE-IOT-Connector.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -500,7 +500,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 0810;
-				ORGANIZATIONNAME = "Mike Robertson";
+				ORGANIZATIONNAME = ECS;
 				TargetAttributes = {
 					27468DB019CB248800435340 = {
 						DevelopmentTeam = PP64RT7P8Z;
@@ -509,13 +509,12 @@
 						TestTargetID = 27468DB019CB248800435340;
 					};
 					27A0C79F19EEC766009FA500 = {
-						DevelopmentTeam = Y4MW9SBU4B;
 						ProvisioningStyle = Automatic;
 					};
 				};
 			};
-			buildConfigurationList = 27468DAC19CB248800435340 /* Build configuration list for PBXProject "IoTstarter" */;
-			compatibilityVersion = "Xcode 3.2";
+			buildConfigurationList = 27468DAC19CB248800435340 /* Build configuration list for PBXProject "BLE-IOT-Connector" */;
+			compatibilityVersion = "Xcode 8.0";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -527,9 +526,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				27A0C79F19EEC766009FA500 /* IoTstarter */,
-				27468DB019CB248800435340 /* IoTstarterDev */,
-				27468DD419CB248800435340 /* IoTstarterTests */,
+				27A0C79F19EEC766009FA500 /* BLE-IOT-Connector */,
+				27468DB019CB248800435340 /* BLE-IOT-ConnectorDev */,
+				27468DD419CB248800435340 /* BLE-IOT-ConnectorTests */,
 			);
 		};
 /* End PBXProject section */
@@ -688,7 +687,7 @@
 /* Begin PBXTargetDependency section */
 		27468DDB19CB248800435340 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 27468DB019CB248800435340 /* IoTstarterDev */;
+			target = 27468DB019CB248800435340 /* BLE-IOT-ConnectorDev */;
 			targetProxy = 27468DDA19CB248800435340 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -827,7 +826,7 @@
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "IoTstarter/IoTstarter-Prefix.pch";
-				INFOPLIST_FILE = "IoTstarter/IoTstarter-Info.plist";
+				INFOPLIST_FILE = "IoTstarter/BLE-IOT-Connector-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
@@ -854,7 +853,7 @@
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "IoTstarter/IoTstarter-Prefix.pch";
-				INFOPLIST_FILE = "IoTstarter/IoTstarter-Info.plist";
+				INFOPLIST_FILE = "IoTstarter/BLE-IOT-Connector-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
@@ -883,7 +882,7 @@
 					"DEBUG=1",
 					"$(inherited)",
 				);
-				INFOPLIST_FILE = "IoTstarterTests/IoTstarterTests-Info.plist";
+				INFOPLIST_FILE = "IoTstarterTests/BLE-IOT-ConnectorTests-Info.plist";
 				PRODUCT_BUNDLE_IDENTIFIER = "IBM.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUNDLE_LOADER)";
@@ -902,7 +901,7 @@
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "IoTstarter/IoTstarter-Prefix.pch";
-				INFOPLIST_FILE = "IoTstarterTests/IoTstarterTests-Info.plist";
+				INFOPLIST_FILE = "IoTstarterTests/BLE-IOT-ConnectorTests-Info.plist";
 				PRODUCT_BUNDLE_IDENTIFIER = "IBM.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUNDLE_LOADER)";
@@ -962,7 +961,7 @@
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "IoTstarter/IoTstarter-Prefix.pch";
-				INFOPLIST_FILE = "IoTstarter/IoTstarter-Info.plist";
+				INFOPLIST_FILE = "IoTstarter/BLE-IOT-Connector-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
@@ -987,7 +986,7 @@
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "IoTstarter/IoTstarter-Prefix.pch";
-				INFOPLIST_FILE = "IoTstarterTests/IoTstarterTests-Info.plist";
+				INFOPLIST_FILE = "IoTstarterTests/BLE-IOT-ConnectorTests-Info.plist";
 				PRODUCT_BUNDLE_IDENTIFIER = "IBM.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUNDLE_LOADER)";
@@ -1002,22 +1001,22 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Distribution: International Business Machines";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = SD55QTFVQ7;
+				DEVELOPMENT_TEAM = Y4MW9SBU4B;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "IoTstarter/IoTstarter-Prefix.pch";
-				INFOPLIST_FILE = "IoTstarter-Info.plist";
+				GCC_PREFIX_HEADER = "IoTstarter/BLE-IOT-Connector-Prefix.pch";
+				INFOPLIST_FILE = "$(SRCROOT)/IoTstarter/BLE-IOT-Connector-Info.plist";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/IoTstarter",
 				);
 				OTHER_LDFLAGS = "-ObjC";
-				PRODUCT_BUNDLE_IDENTIFIER = com.nathanr.IoTstarter;
-				PRODUCT_NAME = IoTstarter;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.spresley.BLE-IOT-Connector";
+				PRODUCT_NAME = "BLE-IOT-Connector";
 				PROVISIONING_PROFILE = "";
 				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
@@ -1031,22 +1030,22 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Distribution: International Business Machines";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = SD55QTFVQ7;
+				DEVELOPMENT_TEAM = Y4MW9SBU4B;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "IoTstarter/IoTstarter-Prefix.pch";
-				INFOPLIST_FILE = "IoTstarter-Info.plist";
+				GCC_PREFIX_HEADER = "IoTstarter/BLE-IOT-Connector-Prefix.pch";
+				INFOPLIST_FILE = "$(SRCROOT)/IoTstarter/BLE-IOT-Connector-Info.plist";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/IoTstarter",
 				);
 				OTHER_LDFLAGS = "-ObjC";
-				PRODUCT_BUNDLE_IDENTIFIER = com.spresley.IoTstarter;
-				PRODUCT_NAME = IoTstarter;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.spresley.BLE-IOT-Connector";
+				PRODUCT_NAME = "BLE-IOT-Connector";
 				PROVISIONING_PROFILE = "";
 				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
@@ -1060,22 +1059,22 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Distribution: International Business Machines";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = SD55QTFVQ7;
+				DEVELOPMENT_TEAM = Y4MW9SBU4B;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "IoTstarter/IoTstarter-Prefix.pch";
-				INFOPLIST_FILE = "IoTstarter-Info.plist";
+				GCC_PREFIX_HEADER = "IoTstarter/BLE-IOT-Connector-Prefix.pch";
+				INFOPLIST_FILE = "$(SRCROOT)/IoTstarter/BLE-IOT-Connector-Info.plist";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/IoTstarter",
 				);
 				OTHER_LDFLAGS = "-ObjC";
-				PRODUCT_BUNDLE_IDENTIFIER = com.spresley.IoTstarter;
-				PRODUCT_NAME = IoTstarter;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.spresley.BLE-IOT-Connector";
+				PRODUCT_NAME = "BLE-IOT-Connector";
 				PROVISIONING_PROFILE = "";
 				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
@@ -1085,7 +1084,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		27468DAC19CB248800435340 /* Build configuration list for PBXProject "IoTstarter" */ = {
+		27468DAC19CB248800435340 /* Build configuration list for PBXProject "BLE-IOT-Connector" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				27468DE419CB248800435340 /* Debug */,
@@ -1095,7 +1094,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		27468DE619CB248800435340 /* Build configuration list for PBXNativeTarget "IoTstarterDev" */ = {
+		27468DE619CB248800435340 /* Build configuration list for PBXNativeTarget "BLE-IOT-ConnectorDev" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				27468DE719CB248800435340 /* Debug */,
@@ -1105,7 +1104,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		27468DE919CB248800435340 /* Build configuration list for PBXNativeTarget "IoTstarterTests" */ = {
+		27468DE919CB248800435340 /* Build configuration list for PBXNativeTarget "BLE-IOT-ConnectorTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				27468DEA19CB248800435340 /* Debug */,
@@ -1115,7 +1114,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		27A0C7C319EEC766009FA500 /* Build configuration list for PBXNativeTarget "IoTstarter" */ = {
+		27A0C7C319EEC766009FA500 /* Build configuration list for PBXNativeTarget "BLE-IOT-Connector" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				27A0C7C419EEC766009FA500 /* Debug */,
