@@ -229,6 +229,83 @@
     NSLog(@"**** DISCONNECTED FROM SENSOR TAG!!!");
 }
 
+// When the specified services are discovered, the peripheral calls the peripheral:didDiscoverServices: method of its delegate object.
+- (void)peripheral:(CBPeripheral *)peripheral didDiscoverServices:(NSError *)error {
+    // Core Bluetooth creates an array of CBService objects —- one for each service that is discovered on the peripheral.
+    for (CBService *service in peripheral.services) {
+        NSLog(@"Discovered service: %@", service);
+        if ([service.UUID isEqual:[CBUUID UUIDWithString:UUID_ROOM_MONITOR_SERVICE]]) {
+            [peripheral discoverCharacteristics:nil forService:service];
+        }
+    }
+}
+
+- (void)peripheral:(CBPeripheral *)peripheral didDiscoverCharacteristicsForService:(CBService *)service error:(NSError *)error {
+    for (CBCharacteristic *characteristic in service.characteristics) {
+        //uint8_t enableValue = 1;
+        //NSData *enableBytes = [NSData dataWithBytes:&enableValue length:sizeof(uint8_t)];
+        NSLog(@"Discovered Characteristics:");
+        /* Temperature
+         if ([characteristic.UUID isEqual:[CBUUID UUIDWithString:UUID_TEMPERATURE_DATA]]) {
+         // Enable Temperature Sensor notification
+         [self.sensorTag setNotifyValue:YES forCharacteristic:characteristic];
+         }
+         
+         if ([characteristic.UUID isEqual:[CBUUID UUIDWithString:UUID_TEMPERATURE_CONFIG]]) {
+         // Enable Temperature Sensor
+         [self.sensorTag writeValue:enableBytes forCharacteristic:characteristic type:CBCharacteristicWriteWithResponse];
+         }
+         
+         // Humidity
+         if ([characteristic.UUID isEqual:[CBUUID UUIDWithString:UUID_HUMIDITY_DATA]]) {
+         // Enable Humidity Sensor notification
+         [self.sensorTag setNotifyValue:YES forCharacteristic:characteristic];
+         }
+         
+         if ([characteristic.UUID isEqual:[CBUUID UUIDWithString:UUID_HUMIDITY_CONFIG]]) {
+         // Enable Humidity Sensor
+         [self.sensorTag writeValue:enableBytes forCharacteristic:characteristic type:CBCharacteristicWriteWithResponse];
+         }*/
+        
+        // Room Monitor Service
+        if ([characteristic.UUID isEqual:[CBUUID UUIDWithString:roomMonitorMostRecentLightLevelCharateristicUUIDString]]) {
+            // Read most recent light level
+            [self.sensorTag setNotifyValue:NO forCharacteristic:characteristic];
+            [self.sensorTag readValueForCharacteristic:characteristic];
+            NSLog(@"Most recent light level");
+        }
+        if ([characteristic.UUID isEqual:[CBUUID UUIDWithString:roomMonitorMostRecentActivityStateUUIDString]]) {
+            // Read most recent Activity level
+            [self.sensorTag setNotifyValue:NO forCharacteristic:characteristic];
+            [self.sensorTag readValueForCharacteristic:characteristic];
+            NSLog(@"Most recent activity level");
+        }
+        if ([characteristic.UUID isEqual:[CBUUID UUIDWithString:roomMonitorTimeOfMostRecentMeasurementUUIDString]]) {
+            // Read most recent time
+            [self.sensorTag setNotifyValue:NO forCharacteristic:characteristic];
+            [self.sensorTag readValueForCharacteristic:characteristic];
+            NSLog(@"Time of measurement");
+        }
+    }
+}
+
+
+- (void)peripheral:(CBPeripheral *)peripheral didUpdateValueForCharacteristic:(CBCharacteristic *)characteristic error:(NSError *)error {
+    if (error) {
+        NSLog(@"Error changing notification state: %@", [error localizedDescription]);
+    } else {
+        NSLog(@"Extracting Data");
+        // extract the data from the characteristic's value property and display the value based on the characteristic type
+        NSData *dataBytes = characteristic.value;
+        if ([characteristic.UUID isEqual:[CBUUID UUIDWithString:roomMonitorMostRecentLightLevelCharateristicUUIDString]]) {
+            //[self displayTemperature:dataBytes];
+            NSLog(@"Extracted data: %@ with ID %@", characteristic.value, characteristic.UUID);
+        } else if ([characteristic.UUID isEqual:[CBUUID UUIDWithString:roomMonitorMostRecentActivityStateUUIDString]]) {
+            //[self displayHumidity:dataBytes];
+            NSLog(@"Extracted data");
+        }
+    }
+}
 
 
 /*************************************************************************
