@@ -97,6 +97,10 @@
     self.organizationField.text = appDelegate.organization;
     self.deviceIDField.text = appDelegate.deviceID;
     self.authTokenField.text = appDelegate.authToken;
+    
+    /*
+     *  Todo BLE stuff here
+     */
 }
 
 - (void)updateViewLabels

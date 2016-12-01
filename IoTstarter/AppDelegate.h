@@ -21,6 +21,7 @@
 #import <CoreLocation/CoreLocation.h>
 #import <AVFoundation/AVFoundation.h>
 #import <AdSupport/ASIdentifierManager.h>
+#import <CoreBluetooth/CoreBluetooth.h>
 #import "Constants.h"
 #import "Messenger.h"
 #import "IoTProfile.h"
