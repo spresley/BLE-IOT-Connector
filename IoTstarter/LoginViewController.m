@@ -64,8 +64,12 @@
     self.deviceIDField.placeholder = IOTDevicePlaceholder;
     self.authTokenField.placeholder = IOTAuthPlaceholder;
     
+    /*
+     * Pre-fill connection info
+     */
+    
     self.organizationField.text = @"f6z0bl";
-    self.deviceIDField.text = @"Dev002";
+    self.deviceIDField.text = [[[ASIdentifierManager sharedManager] advertisingIdentifier] UUIDString]; //use advertising identifier as device ID
     self.authTokenField.text = @"test1234";
     
     if (![appDelegate.organization isEqualToString:@""])
