@@ -112,9 +112,6 @@
 /** Update background color when a color command message is received */
 - (void)updateColor:(UIColor *)color;
 
-/** Turn the device torch on or off when a light command message is received */
-- (void)toggleLight;
-
 /** Add text command messages to the log view */
 - (void)addLogMessage:(NSString *)textValue;
 

@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2729B46D19DDFB4B00356440 /* Second_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2729B46C19DDFB4B00356440 /* Second_iPhone.storyboard */; };
 		2730A23C19FA93F300B6A0C3 /* iotlogo2.png in Resources */ = {isa = PBXBuildFile; fileRef = 2730A23B19FA93F300B6A0C3 /* iotlogo2.png */; };
 		2730A23D19FA94CA00B6A0C3 /* iotlogo2.png in Resources */ = {isa = PBXBuildFile; fileRef = 2730A23B19FA93F300B6A0C3 /* iotlogo2.png */; };
 		27468DB519CB248800435340 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27468DB419CB248800435340 /* Foundation.framework */; };
@@ -17,7 +16,6 @@
 		27468DC119CB248800435340 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 27468DC019CB248800435340 /* main.m */; };
 		27468DC519CB248800435340 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 27468DC419CB248800435340 /* AppDelegate.m */; };
 		27468DC819CB248800435340 /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 27468DC619CB248800435340 /* Main_iPhone.storyboard */; };
-		27468DCB19CB248800435340 /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 27468DC919CB248800435340 /* Main_iPad.storyboard */; };
 		27468DCE19CB248800435340 /* IoTStarterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 27468DCD19CB248800435340 /* IoTStarterViewController.m */; };
 		27468DD019CB248800435340 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 27468DCF19CB248800435340 /* Images.xcassets */; };
 		27468DD719CB248800435340 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27468DD619CB248800435340 /* XCTest.framework */; };
@@ -32,10 +30,6 @@
 		27468E0319CB43D500435340 /* libiosMQTT.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 27468E0119CB43D500435340 /* libiosMQTT.a */; };
 		274B158C19F6F6F500FF15DE /* ic_chevron-right.png in Resources */ = {isa = PBXBuildFile; fileRef = 274B158A19F6F6F500FF15DE /* ic_chevron-right.png */; };
 		274B158D19F6F6F500FF15DE /* ic_chevron-left.png in Resources */ = {isa = PBXBuildFile; fileRef = 274B158B19F6F6F500FF15DE /* ic_chevron-left.png */; };
-		275172041A1256A600BC0072 /* RemoteViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 275172031A1256A600BC0072 /* RemoteViewController.m */; };
-		275172051A1258BB00BC0072 /* RemoteViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 275172031A1256A600BC0072 /* RemoteViewController.m */; };
-		275172081A12911D00BC0072 /* DPadView.m in Sources */ = {isa = PBXBuildFile; fileRef = 275172071A12911D00BC0072 /* DPadView.m */; };
-		275172091A1293FD00BC0072 /* DPadView.m in Sources */ = {isa = PBXBuildFile; fileRef = 275172071A12911D00BC0072 /* DPadView.m */; };
 		27555DB81A5B211F00E5A7D0 /* ic_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 27555DB61A5B211F00E5A7D0 /* ic_icon.png */; };
 		27555DB91A5B211F00E5A7D0 /* ic_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 27555DB61A5B211F00E5A7D0 /* ic_icon.png */; };
 		27555DBA1A5B211F00E5A7D0 /* ic_logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 27555DB71A5B211F00E5A7D0 /* ic_logo.png */; };
@@ -44,7 +38,6 @@
 		2763729F19D3419A00706945 /* ic_cogwheels.png in Resources */ = {isa = PBXBuildFile; fileRef = 2763729B19D3419A00706945 /* ic_cogwheels.png */; };
 		276372A019D3419A00706945 /* ic_picture.png in Resources */ = {isa = PBXBuildFile; fileRef = 2763729C19D3419A00706945 /* ic_picture.png */; };
 		276372A119D3419A00706945 /* ic_circle_question_mark.png in Resources */ = {isa = PBXBuildFile; fileRef = 2763729D19D3419A00706945 /* ic_circle_question_mark.png */; };
-		276372A419D4A43800706945 /* DrawingView.m in Sources */ = {isa = PBXBuildFile; fileRef = 276372A319D4A43800706945 /* DrawingView.m */; };
 		277C44381A2F92770097313A /* IoTProfile.m in Sources */ = {isa = PBXBuildFile; fileRef = 277C44371A2F92770097313A /* IoTProfile.m */; };
 		277C44391A2F92770097313A /* IoTProfile.m in Sources */ = {isa = PBXBuildFile; fileRef = 277C44371A2F92770097313A /* IoTProfile.m */; };
 		277C443D1A2FAD780097313A /* ProfilesTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 277C443C1A2FAD780097313A /* ProfilesTableViewController.m */; };
@@ -90,12 +83,10 @@
 		27A0C7A919EEC766009FA500 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 27468DC019CB248800435340 /* main.m */; };
 		27A0C7AA19EEC766009FA500 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 27B5927A19E5B22B00593424 /* LoginViewController.m */; };
 		27A0C7AC19EEC766009FA500 /* Messenger.m in Sources */ = {isa = PBXBuildFile; fileRef = 27468DF319CB406F00435340 /* Messenger.m */; };
-		27A0C7AD19EEC766009FA500 /* DrawingView.m in Sources */ = {isa = PBXBuildFile; fileRef = 276372A319D4A43800706945 /* DrawingView.m */; };
 		27A0C7AF19EEC766009FA500 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27468DB619CB248800435340 /* CoreGraphics.framework */; };
 		27A0C7B019EEC766009FA500 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27468DB819CB248800435340 /* UIKit.framework */; };
 		27A0C7B119EEC766009FA500 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27468DB419CB248800435340 /* Foundation.framework */; };
 		27A0C7B219EEC766009FA500 /* libiosMQTT.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 27468E0119CB43D500435340 /* libiosMQTT.a */; };
-		27A0C7B419EEC766009FA500 /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 27468DC919CB248800435340 /* Main_iPad.storyboard */; };
 		27A0C7B519EEC766009FA500 /* ic_cogwheels.png in Resources */ = {isa = PBXBuildFile; fileRef = 2763729B19D3419A00706945 /* ic_cogwheels.png */; };
 		27A0C7B619EEC766009FA500 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 27468DCF19CB248800435340 /* Images.xcassets */; };
 		27A0C7B719EEC766009FA500 /* iotlogo.png in Resources */ = {isa = PBXBuildFile; fileRef = 27B5927C19E5C4B000593424 /* iotlogo.png */; };
@@ -103,7 +94,6 @@
 		27A0C7B919EEC766009FA500 /* ic_picture.png in Resources */ = {isa = PBXBuildFile; fileRef = 2763729C19D3419A00706945 /* ic_picture.png */; };
 		27A0C7BA19EEC766009FA500 /* ic_file.png in Resources */ = {isa = PBXBuildFile; fileRef = 27B5928119EC734700593424 /* ic_file.png */; };
 		27A0C7BB19EEC766009FA500 /* ic_circle_question_mark.png in Resources */ = {isa = PBXBuildFile; fileRef = 2763729D19D3419A00706945 /* ic_circle_question_mark.png */; };
-		27A0C7BC19EEC766009FA500 /* Second_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2729B46C19DDFB4B00356440 /* Second_iPhone.storyboard */; };
 		27A0C7BD19EEC766009FA500 /* ic_home.png in Resources */ = {isa = PBXBuildFile; fileRef = 2763729A19D3419A00706945 /* ic_home.png */; };
 		27A0C7BE19EEC766009FA500 /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 27468DC619CB248800435340 /* Main_iPhone.storyboard */; };
 		27A0C7BF19EEC766009FA500 /* iotlogosmall.png in Resources */ = {isa = PBXBuildFile; fileRef = 27B5928319EC74CF00593424 /* iotlogosmall.png */; };
@@ -135,7 +125,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		2729B46C19DDFB4B00356440 /* Second_iPhone.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Second_iPhone.storyboard; sourceTree = "<group>"; };
 		2730A23B19FA93F300B6A0C3 /* iotlogo2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = iotlogo2.png; sourceTree = "<group>"; };
 		27468DB119CB248800435340 /* BLE-IOT-ConnectorDev.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "BLE-IOT-ConnectorDev.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		27468DB419CB248800435340 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -148,7 +137,6 @@
 		27468DC319CB248800435340 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		27468DC419CB248800435340 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		27468DC719CB248800435340 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
-		27468DCA19CB248800435340 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPad.storyboard; sourceTree = "<group>"; };
 		27468DCC19CB248800435340 /* IoTStarterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IoTStarterViewController.h; sourceTree = "<group>"; };
 		27468DCD19CB248800435340 /* IoTStarterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IoTStarterViewController.m; sourceTree = "<group>"; };
 		27468DCF19CB248800435340 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
@@ -169,18 +157,12 @@
 		27468E0219CB43D500435340 /* MqttOCClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MqttOCClient.h; sourceTree = "<group>"; };
 		274B158A19F6F6F500FF15DE /* ic_chevron-right.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ic_chevron-right.png"; sourceTree = "<group>"; };
 		274B158B19F6F6F500FF15DE /* ic_chevron-left.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ic_chevron-left.png"; sourceTree = "<group>"; };
-		275172021A1256A600BC0072 /* RemoteViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RemoteViewController.h; sourceTree = "<group>"; };
-		275172031A1256A600BC0072 /* RemoteViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RemoteViewController.m; sourceTree = "<group>"; };
-		275172061A12911D00BC0072 /* DPadView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DPadView.h; sourceTree = "<group>"; };
-		275172071A12911D00BC0072 /* DPadView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DPadView.m; sourceTree = "<group>"; };
 		27555DB61A5B211F00E5A7D0 /* ic_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_icon.png; sourceTree = "<group>"; };
 		27555DB71A5B211F00E5A7D0 /* ic_logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_logo.png; sourceTree = "<group>"; };
 		2763729A19D3419A00706945 /* ic_home.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_home.png; sourceTree = "<group>"; };
 		2763729B19D3419A00706945 /* ic_cogwheels.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_cogwheels.png; sourceTree = "<group>"; };
 		2763729C19D3419A00706945 /* ic_picture.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_picture.png; sourceTree = "<group>"; };
 		2763729D19D3419A00706945 /* ic_circle_question_mark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_circle_question_mark.png; sourceTree = "<group>"; };
-		276372A219D4A43800706945 /* DrawingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DrawingView.h; sourceTree = "<group>"; };
-		276372A319D4A43800706945 /* DrawingView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DrawingView.m; sourceTree = "<group>"; };
 		277C44371A2F92770097313A /* IoTProfile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IoTProfile.m; sourceTree = "<group>"; };
 		277C443A1A2F92840097313A /* IoTProfile.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IoTProfile.h; sourceTree = "<group>"; };
 		277C443B1A2FAD780097313A /* ProfilesTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProfilesTableViewController.h; sourceTree = "<group>"; };
@@ -388,18 +370,12 @@
 		27FA87DF19DF2166005EAFBF /* views */ = {
 			isa = PBXGroup;
 			children = (
-				276372A219D4A43800706945 /* DrawingView.h */,
-				276372A319D4A43800706945 /* DrawingView.m */,
 				27468DCC19CB248800435340 /* IoTStarterViewController.h */,
 				27468DCD19CB248800435340 /* IoTStarterViewController.m */,
 				27B5927919E5B22B00593424 /* LoginViewController.h */,
 				27B5927A19E5B22B00593424 /* LoginViewController.m */,
 				27B5927E19E635D100593424 /* LogTableViewController.h */,
 				27B5927F19E635D100593424 /* LogTableViewController.m */,
-				275172021A1256A600BC0072 /* RemoteViewController.h */,
-				275172031A1256A600BC0072 /* RemoteViewController.m */,
-				275172061A12911D00BC0072 /* DPadView.h */,
-				275172071A12911D00BC0072 /* DPadView.m */,
 				277C443B1A2FAD780097313A /* ProfilesTableViewController.h */,
 				277C443C1A2FAD780097313A /* ProfilesTableViewController.m */,
 			);
@@ -409,9 +385,7 @@
 		27FA87E019DF2174005EAFBF /* storyboards */ = {
 			isa = PBXGroup;
 			children = (
-				27468DC919CB248800435340 /* Main_iPad.storyboard */,
 				27468DC619CB248800435340 /* Main_iPhone.storyboard */,
-				2729B46C19DDFB4B00356440 /* Second_iPhone.storyboard */,
 				6745C5F41DDDAEC900969415 /* Launch Screen.storyboard */,
 			);
 			name = storyboards;
@@ -543,7 +517,6 @@
 				27E4809F19F8560F00762CEB /* ic_chevron-right.png in Resources */,
 				27555DB91A5B211F00E5A7D0 /* ic_icon.png in Resources */,
 				278ACC701A12B81A002EF6F0 /* ic_left_arrow.png in Resources */,
-				27468DCB19CB248800435340 /* Main_iPad.storyboard in Resources */,
 				2730A23D19FA94CA00B6A0C3 /* iotlogo2.png in Resources */,
 				278515F91A016FCA000521F6 /* iotlogo40x40.png in Resources */,
 				27E480A019F8561200762CEB /* ic_chevron-left.png in Resources */,
@@ -563,7 +536,6 @@
 				276372A119D3419A00706945 /* ic_circle_question_mark.png in Resources */,
 				278515FD1A016FCA000521F6 /* iotlogo60x60.png in Resources */,
 				278516011A016FCA000521F6 /* iotlogo80x80.png in Resources */,
-				2729B46D19DDFB4B00356440 /* Second_iPhone.storyboard in Resources */,
 				2763729E19D3419A00706945 /* ic_home.png in Resources */,
 				278516031A016FCA000521F6 /* iotlogo152x152.png in Resources */,
 				278516051A016FCA000521F6 /* iotlogo180x180.png in Resources */,
@@ -592,7 +564,6 @@
 				274B158C19F6F6F500FF15DE /* ic_chevron-right.png in Resources */,
 				27555DB81A5B211F00E5A7D0 /* ic_icon.png in Resources */,
 				278ACC6F1A12B81A002EF6F0 /* ic_left_arrow.png in Resources */,
-				27A0C7B419EEC766009FA500 /* Main_iPad.storyboard in Resources */,
 				2730A23C19FA93F300B6A0C3 /* iotlogo2.png in Resources */,
 				278515F81A016FCA000521F6 /* iotlogo40x40.png in Resources */,
 				274B158D19F6F6F500FF15DE /* ic_chevron-left.png in Resources */,
@@ -613,7 +584,6 @@
 				27A0C7BB19EEC766009FA500 /* ic_circle_question_mark.png in Resources */,
 				278515FC1A016FCA000521F6 /* iotlogo60x60.png in Resources */,
 				278516001A016FCA000521F6 /* iotlogo80x80.png in Resources */,
-				27A0C7BC19EEC766009FA500 /* Second_iPhone.storyboard in Resources */,
 				27A0C7BD19EEC766009FA500 /* ic_home.png in Resources */,
 				278516021A016FCA000521F6 /* iotlogo152x152.png in Resources */,
 				278516041A016FCA000521F6 /* iotlogo180x180.png in Resources */,
@@ -634,7 +604,6 @@
 			files = (
 				277C44391A2F92770097313A /* IoTProfile.m in Sources */,
 				27468DFA19CB409800435340 /* TopicFactory.m in Sources */,
-				275172091A1293FD00BC0072 /* DPadView.m in Sources */,
 				277C443E1A2FAD780097313A /* ProfilesTableViewController.m in Sources */,
 				27468DCE19CB248800435340 /* IoTStarterViewController.m in Sources */,
 				27468DC519CB248800435340 /* AppDelegate.m in Sources */,
@@ -646,8 +615,6 @@
 				27468DC119CB248800435340 /* main.m in Sources */,
 				27B5927B19E5B22B00593424 /* LoginViewController.m in Sources */,
 				27468DF419CB406F00435340 /* Messenger.m in Sources */,
-				275172051A1258BB00BC0072 /* RemoteViewController.m in Sources */,
-				276372A419D4A43800706945 /* DrawingView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -665,7 +632,6 @@
 			files = (
 				277C44381A2F92770097313A /* IoTProfile.m in Sources */,
 				27A0C7A119EEC766009FA500 /* TopicFactory.m in Sources */,
-				275172081A12911D00BC0072 /* DPadView.m in Sources */,
 				277C443D1A2FAD780097313A /* ProfilesTableViewController.m in Sources */,
 				27A0C7A219EEC766009FA500 /* IoTStarterViewController.m in Sources */,
 				27A0C7A319EEC766009FA500 /* AppDelegate.m in Sources */,
@@ -677,8 +643,6 @@
 				27A0C7A919EEC766009FA500 /* main.m in Sources */,
 				27A0C7AA19EEC766009FA500 /* LoginViewController.m in Sources */,
 				27A0C7AC19EEC766009FA500 /* Messenger.m in Sources */,
-				275172041A1256A600BC0072 /* RemoteViewController.m in Sources */,
-				27A0C7AD19EEC766009FA500 /* DrawingView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -707,14 +671,6 @@
 				27468DC719CB248800435340 /* Base */,
 			);
 			name = Main_iPhone.storyboard;
-			sourceTree = "<group>";
-		};
-		27468DC919CB248800435340 /* Main_iPad.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				27468DCA19CB248800435340 /* Base */,
-			);
-			name = Main_iPad.storyboard;
 			sourceTree = "<group>";
 		};
 		27468DDF19CB248800435340 /* InfoPlist.strings */ = {

@@ -55,28 +55,6 @@
     return messageString;
 }
 
-+ (NSString *)createTouchmoveMessage:(double)screen_x
-                            screen_y:(double)screen_y
-                             delta_x:(double)delta_x
-                             delta_y:(double)delta_y
-                               ended:(int)ended
-{
-    NSDictionary *messageDictionary = @{
-                                        @"d": @{
-                                                JSON_SCREEN_X: @(screen_x),
-                                                JSON_SCREEN_Y: @(screen_y),
-                                                JSON_DELTA_X: @(delta_x),
-                                                JSON_DELTA_Y: @(delta_y),
-                                                JSON_ENDED: @(ended)
-                                                }
-                                        };
-    
-    NSError *error;
-    NSData *messageData = [NSJSONSerialization dataWithJSONObject:messageDictionary options:0 error:&error];
-    
-    NSString *messageString = [[NSString alloc] initWithData:messageData encoding:NSUTF8StringEncoding];
-    return messageString;
-}
 
 + (NSString *)createTextMessage:(NSString *)text
 {
@@ -93,38 +71,5 @@
     return messageString;
 }
 
-+ (NSString *)createGamepadMessage:(NSString *)button
-{
-    NSDictionary *messageDictionary = @{
-                                        @"d": @{
-                                                JSON_BUTTON: button
-                                                }
-                                        };
-    
-    NSError *error;
-    NSData *messageData = [NSJSONSerialization dataWithJSONObject:messageDictionary options:0 error:&error];
-    
-    NSString *messageString = [[NSString alloc] initWithData:messageData encoding:NSUTF8StringEncoding];
-    return messageString;
-}
-
-+ (NSString *)createGamepadMessage:(NSString *)button
-                            dpad_x:(double)dpad_x
-                            dpad_y:(double)dpad_y
-{
-    NSDictionary *messageDictionary = @{
-                                        @"d": @{
-                                                JSON_BUTTON: button,
-                                                JSON_DPAD_X: @(dpad_x),
-                                                JSON_DPAD_Y: @(dpad_y)
-                                                }
-                                        };
-    
-    NSError *error;
-    NSData *messageData = [NSJSONSerialization dataWithJSONObject:messageDictionary options:0 error:&error];
-    
-    NSString *messageString = [[NSString alloc] initWithData:messageData encoding:NSUTF8StringEncoding];
-    return messageString;
-}
 
 @end

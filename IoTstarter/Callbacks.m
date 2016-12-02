@@ -229,10 +229,7 @@
         {
             [self processTextMessage:payload];
         }
-        else if ([topicParts[2] isEqualToString:IOTLightEvent])
-        {
-            [appDelegate toggleLight];
-        } else if ([topicParts[2] isEqualToString:IOTAlertEvent])
+        else if ([topicParts[2] isEqualToString:IOTAlertEvent])
         {
             [self processAlertMessage:payload];
         }

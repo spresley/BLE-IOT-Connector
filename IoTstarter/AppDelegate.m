@@ -394,40 +394,6 @@
     [self.iotViewController updateBackgroundColor:self.color];
 }
 
-/** Turn the device torch on or off. If no torch is present, display an alert saying so.
- */
-- (void)toggleLight
-{
-    NSLog(@"%s:%d entered", __func__, __LINE__);
-    AVCaptureDevice *device = [AVCaptureDevice defaultDeviceWithMediaType:AVMediaTypeVideo];
-    if ([device isTorchAvailable] == NO)
-    {
-        NSLog(@"Torch not available");
-        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Torch not available" message:@"This feature is not supported on this device." delegate:self cancelButtonTitle:nil otherButtonTitles:@"OK", nil];
-        [alert setAlertViewStyle:UIAlertViewStyleDefault];
-        [alert show];
-        return;
-    }
-    if (device.torchMode == AVCaptureTorchModeOff)
-    {
-        self.session = [[AVCaptureSession alloc] init];
-        AVCaptureDeviceInput *input = [AVCaptureDeviceInput deviceInputWithDevice:device error:nil];
-        [self.session addInput:input];
-        AVCaptureVideoDataOutput *output = [[AVCaptureVideoDataOutput alloc] init];
-        [self.session addOutput:output];
-        [self.session beginConfiguration];
-        [device lockForConfiguration:nil];
-        [device setTorchMode:AVCaptureTorchModeOn];
-        [device unlockForConfiguration];
-        [self.session commitConfiguration];
-        [self.session startRunning];
-    }
-    else
-    {
-        [self.session stopRunning];
-        self.session = nil;
-    }
-}
 
 /** Add received text messages to the log view table. Update the tab bar badge for the log
  *  view to indicate a new unread message has arrived.

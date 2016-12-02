@@ -51,11 +51,8 @@ NSString * const IOTAccelEvent        = @"accel";
 NSString * const IOTColorEvent        = @"color";
 NSString * const IOTTouchMoveEvent    = @"touchmove";
 NSString * const IOTSwipeEvent        = @"swipe";
-NSString * const IOTLightEvent        = @"light";
 NSString * const IOTTextEvent         = @"text";
 NSString * const IOTAlertEvent        = @"alert";
-NSString * const IOTDirectionEvent    = @"direction";
-NSString * const IOTGamepadEvent      = @"gamepad";
 NSString * const IOTStatusEvent       = @"status";
 
 // Login View button and placeholder text
@@ -99,18 +96,6 @@ NSString * const JSON_ACCEL_Y         = @"acceleration_y";
 NSString * const JSON_ACCEL_Z         = @"acceleration_z";
 NSString * const JSON_LAT             = @"lat";
 NSString * const JSON_LON             = @"lon";
-
-NSString * const JSON_BUTTON          = @"button";
-NSString * const JSON_DPAD_X          = @"x";
-NSString * const JSON_DPAD_Y          = @"y";
-NSString * const JSON_DIRECTION_UP    = @"UP";
-NSString * const JSON_DIRECTION_DOWN  = @"DOWN";
-NSString * const JSON_DIRECTION_LEFT  = @"LEFT";
-NSString * const JSON_DIRECTION_RIGHT = @"RIGHT";
-NSString * const JSON_BUTTON_A        = @"A";
-NSString * const JSON_BUTTON_B        = @"B";
-NSString * const JSON_BUTTON_X        = @"X";
-NSString * const JSON_BUTTON_Y        = @"Y";
 
 @end
 

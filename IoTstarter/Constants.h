@@ -65,11 +65,8 @@ extern NSString * const IOTAccelEvent;
 extern NSString * const IOTColorEvent;
 extern NSString * const IOTTouchMoveEvent;
 extern NSString * const IOTSwipeEvent;
-extern NSString * const IOTLightEvent;
 extern NSString * const IOTTextEvent;
 extern NSString * const IOTAlertEvent;
-extern NSString * const IOTDirectionEvent;
-extern NSString * const IOTGamepadEvent;
 extern NSString * const IOTStatusEvent;
 
 // Login View button and placeholder text
@@ -106,18 +103,6 @@ extern NSString * const JSON_ACCEL_Y;
 extern NSString * const JSON_ACCEL_Z;
 extern NSString * const JSON_LAT;
 extern NSString * const JSON_LON;
-
-extern NSString * const JSON_BUTTON;
-extern NSString * const JSON_DPAD_X;
-extern NSString * const JSON_DPAD_Y;
-extern NSString * const JSON_DIRECTION_UP;
-extern NSString * const JSON_DIRECTION_DOWN;
-extern NSString * const JSON_DIRECTION_LEFT;
-extern NSString * const JSON_DIRECTION_RIGHT;
-extern NSString * const JSON_BUTTON_A;
-extern NSString * const JSON_BUTTON_B;
-extern NSString * const JSON_BUTTON_X;
-extern NSString * const JSON_BUTTON_Y;
 
 /** Extra Strings */
 extern NSString * const YES_STRING;

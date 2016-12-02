@@ -26,18 +26,8 @@
                              lat:(double)lat
                              lon:(double)lon;
 
-+ (NSString *)createTouchmoveMessage:(double)screen_x
-                            screen_y:(double)screen_y
-                             delta_x:(double)delta_x
-                             delta_y:(double)delta_y
-                               ended:(int)ended;
-
 + (NSString *)createTextMessage:(NSString *)text;
 
-+ (NSString *)createGamepadMessage:(NSString *)button;
 
-+ (NSString *)createGamepadMessage:(NSString *)button
-                            dpad_x:(double)dpad_x
-                            dpad_y:(double)dpad_y;
 
 @end
