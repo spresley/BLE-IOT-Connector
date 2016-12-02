@@ -154,19 +154,19 @@
     NSString *state = @"";
     switch ([central state])
     {
-        case CBCentralManagerStateUnsupported:
+        case CBManagerStateUnsupported:
             state = @"This device does not support Bluetooth Low Energy.";
             break;
-        case CBCentralManagerStateUnauthorized:
+        case CBManagerStateUnauthorized:
             state = @"This app is not authorized to use Bluetooth Low Energy.";
             break;
-        case CBCentralManagerStatePoweredOff:
+        case CBManagerStatePoweredOff:
             state = @"Bluetooth on this device is currently powered off.";
             break;
-        case CBCentralManagerStateResetting:
+        case CBManagerStateResetting:
             state = @"The BLE Manager is resetting; a state update is pending.";
             break;
-        case CBCentralManagerStatePoweredOn:
+        case CBManagerStatePoweredOn:
             showAlert = NO;
             state = @"Bluetooth LE is turned on and ready for communication.";
             NSLog(@"%@", state);
@@ -174,7 +174,7 @@
             [NSTimer scheduledTimerWithTimeInterval:TIMER_SCAN_INTERVAL target:self selector:@selector(pauseScan) userInfo:nil repeats:NO];
             [self.centralManager scanForPeripheralsWithServices:nil options:nil];
             break;
-        case CBCentralManagerStateUnknown:
+        case CBManagerStateUnknown:
             state = @"The state of the BLE Manager is unknown.";
             break;
         default:
